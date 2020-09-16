@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <suite name="regressionSuite">
-	
+
 	<test name="Login Test">
 		<classes>
 			<class name="testcases.TC001VerifyLogin" />
 		</classes>
 	</test> <!-- Test -->
-	
-	
+
+
 </suite> <!-- Suite -->

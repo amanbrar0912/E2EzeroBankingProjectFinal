@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9240" started-at="2020-09-16T16:09:35Z" finished-at="2020-09-16T16:09:45Z">
+  <suite name="Default suite" duration-ms="15754" started-at="2020-09-16T17:32:19Z" finished-at="2020-09-16T17:32:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9240" started-at="2020-09-16T16:09:35Z" finished-at="2020-09-16T16:09:45Z">
+    <test name="Default test" duration-ms="15754" started-at="2020-09-16T17:32:19Z" finished-at="2020-09-16T17:32:34Z">
       <class name="testcases.TC001VerifyLogin">
-        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:testcases.TC001VerifyLogin@1018bde2]" name="initializeDriver" is-config="true" duration-ms="7022" started-at="2020-09-16T16:09:35Z" finished-at="2020-09-16T16:09:42Z">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:testcases.TC001VerifyLogin@1018bde2]" name="initializeDriver" is-config="true" duration-ms="10684" started-at="2020-09-16T17:32:19Z" finished-at="2020-09-16T17:32:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:testcases.TC001VerifyLogin@1018bde2]" name="verifyLogin" duration-ms="1190" started-at="2020-09-16T16:09:43Z" finished-at="2020-09-16T16:09:44Z">
+        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:testcases.TC001VerifyLogin@1018bde2]" name="verifyLogin" duration-ms="3747" started-at="2020-09-16T17:32:29Z" finished-at="2020-09-16T17:32:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC001VerifyLogin@1018bde2]" name="tearDown" is-config="true" duration-ms="1001" started-at="2020-09-16T16:09:44Z" finished-at="2020-09-16T16:09:45Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC001VerifyLogin@1018bde2]" name="tearDown" is-config="true" duration-ms="1281" started-at="2020-09-16T17:32:33Z" finished-at="2020-09-16T17:32:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
