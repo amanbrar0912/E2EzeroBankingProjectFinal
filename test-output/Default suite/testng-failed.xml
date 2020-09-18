@@ -6,7 +6,7 @@
       <class name="testcases.TC001VerifyLogin">
         <methods>
           <include name="tearDown"/>
-          <include name="verifyLogin"/>
+          <include name="verifyLogin" invocation-numbers="1 2"/>
           <include name="initializeDriver"/>
         </methods>
       </class> <!-- testcases.TC001VerifyLogin -->

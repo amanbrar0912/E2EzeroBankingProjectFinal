@@ -17,8 +17,6 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class BaseClass {
 	public WebDriver driver;
-	// public ExtentReports report= new
-	// ExtentReports(".\\src\\test\\resources\\reports\\report1.html", false);
 	public ExtentReports report = ExtentManager.getInstance();
 	public static ExtentTest test;
 
@@ -45,7 +43,7 @@ public class BaseClass {
 	@AfterTest
 	public void tearDown() {
 		driver.quit();
-		test.log(LogStatus.INFO, "WebDriver closed.");
+		//test.log(LogStatus.INFO, "WebDriver closed.");
 		report.endTest(test);
 		report.flush();
 	}

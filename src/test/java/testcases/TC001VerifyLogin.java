@@ -1,8 +1,9 @@
 package testcases;
 
 import java.io.IOException;
-
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -11,29 +12,47 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 import base.BaseClass;
+import pageClasses.AccountSummaryPage;
 import pageClasses.HomePage;
 import pageClasses.LoginPage;
+import utilities.ExcelReader;
 
 public class TC001VerifyLogin extends BaseClass {
 	HomePage hp;
 	LoginPage lp;
+	AccountSummaryPage asp;
 
-	@Test
-	public void verifyLogin() throws IOException {
+	@Test(dataProvider = "loginData")
+	public void verifyLogin(String login, String password) throws IOException {
 		test = report.startTest("VerifyLogin Test");
 		hp = new HomePage(driver);
 		hp.goToLoginPage();
 		test.log(LogStatus.INFO, "Clicked sign in button on homepage.");
 		lp = new LoginPage(driver);
-		lp.verifyLogin("username", "password");
+		lp.verifyLogin(login, password);
 		test.log(LogStatus.INFO, "Login credentials entered and submitted.");
 		String expectedTitle = "Zero - Account Summary"; // get this string from SRS
 		String actualTitle = driver.getTitle();
 		test.log(LogStatus.INFO, "Page title captured from landing page.");
+		if (actualTitle.equals(expectedTitle)) {
+			returnToHomePage();
+		}
 		SoftAssert sa = new SoftAssert();
 		sa.assertEquals(actualTitle, expectedTitle);
 		sa.assertAll();
+
 		// Assert.assertEquals(actualTitle, expectedTitle);
+	}
+
+	@DataProvider(name = "loginData")
+	public Object[][] passData() throws IOException {
+		ExcelReader reader = new ExcelReader(".\\src\\test\\resources\\excel\\TC001VerifyLoginData.xlsx", 0);
+		return (reader.getDataFromExcel());
+	}
+
+	public void returnToHomePage() {
+		asp = new AccountSummaryPage(driver);
+		asp.logOut();
 	}
 
 }
