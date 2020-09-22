@@ -17,9 +17,16 @@ public class AccountSummaryPage extends BasePage {
 	@FindBy(xpath="//a[@id='logout_link']")
 	WebElement logOutLink;
 	
+	@FindBy(xpath="//a[contains(text(),'Pay Bills')]")
+	WebElement tabPayBills;
+	
+	public void goToPayBills() {
+		tabPayBills.click();
+	}
+	
 	public void logOut() {
 		userLogo.click();
 		logOutLink.click();
-		
+		System.out.println("logout done");
 	}
 }

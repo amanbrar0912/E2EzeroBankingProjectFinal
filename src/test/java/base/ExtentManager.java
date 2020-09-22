@@ -19,7 +19,7 @@ public class ExtentManager {
 				prop.load(fis);
 				String ExtentReportsFile = prop.getProperty("ExtentReportsFile");
 				System.out.println(ExtentReportsFile);
-				extent = new ExtentReports(ExtentReportsFile, false);
+				extent = new ExtentReports(ExtentReportsFile, true);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

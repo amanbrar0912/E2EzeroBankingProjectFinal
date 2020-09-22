@@ -1,0 +1,23 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 15.105 s <<< FAILURE! - in TestSuite
+testcases.TC001VerifyLogin.verifyLogin[Amandeep, newpass](2)  Time elapsed: 0.71 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [Zero - Account Summary] but found [Zero - Log in]
+	at testcases.TC001VerifyLogin.verifyLogin(TC001VerifyLogin.java:38)
+
+testcases.TC001VerifyLogin.verifyLogin[Hello, World](3)  Time elapsed: 2.04 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#signin_button"}
+  (Session info: chrome=85.0.4183.102)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-0F8J9IN', ip: '192.168.0.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63240}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9bfc3e80b5be40b978c526328be89655
+*** Element info: {Using=id, value=signin_button}
+	at testcases.TC001VerifyLogin.verifyLogin(TC001VerifyLogin.java:25)
+

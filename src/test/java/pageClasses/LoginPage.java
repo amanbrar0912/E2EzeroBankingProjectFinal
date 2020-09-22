@@ -23,10 +23,19 @@ public class LoginPage extends BasePage{
 	@FindBy(xpath="//input[@name='submit']")
 	WebElement btnSubmit;
 	
+	@FindBy(xpath="//a[@class='brand']")
+	WebElement logoBrand;
+	
+	
 	public void verifyLogin(String uname, String pword) {
 		txtbxLogin.sendKeys(uname);
 		txtbxPassword.sendKeys(pword);
 		btnSubmit.click();
+	}
+
+	public void goToHomePage() {
+		System.out.println("clicking the Brand logo");
+		logoBrand.click();
 	}
 
 }

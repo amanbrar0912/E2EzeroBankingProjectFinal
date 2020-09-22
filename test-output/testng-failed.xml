@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [regressionSuite]">
-  <test thread-count="5" name="Login Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="testcases.TC001VerifyLogin">
         <methods>
@@ -11,5 +11,5 @@
         </methods>
       </class> <!-- testcases.TC001VerifyLogin -->
     </classes>
-  </test> <!-- Login Test(failed) -->
-</suite> <!-- Failed suite [regressionSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

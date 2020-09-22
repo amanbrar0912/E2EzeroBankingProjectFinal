@@ -1,28 +1,32 @@
 package base;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
+import pageClasses.AccountSummaryPage;
 
 public class BaseClass {
 	public WebDriver driver;
 	public ExtentReports report = ExtentManager.getInstance();
 	public static ExtentTest test;
+	Properties prop;
+	AccountSummaryPage asp;
 
-	@BeforeTest
+	@BeforeSuite
 	public WebDriver initializeDriver() throws IOException {
-		Properties prop = new Properties();
+		prop = new Properties();
 		FileInputStream fis = new FileInputStream(".\\src\\test\\resources\\properties\\config.properties");
 		prop.load(fis);
 		String browser = prop.getProperty("browser");
@@ -35,16 +39,18 @@ public class BaseClass {
 			// IE Code
 		}
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		driver.get(prop.getProperty("testsiteURL"));
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		return driver;
 	}
 
-	@AfterTest
+	@AfterSuite
 	public void tearDown() {
-		driver.quit();
-		//test.log(LogStatus.INFO, "WebDriver closed.");
+		if (driver != null) {
+			driver.quit();
+		}
 		report.endTest(test);
 		report.flush();
+
 	}
 }
