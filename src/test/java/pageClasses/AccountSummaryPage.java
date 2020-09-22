@@ -20,13 +20,20 @@ public class AccountSummaryPage extends BasePage {
 	@FindBy(xpath="//a[contains(text(),'Pay Bills')]")
 	WebElement tabPayBills;
 	
+	@FindBy(xpath="//a[contains(text(),'Transfer Funds')]")
+	WebElement tabTransferFunds;
+	
 	public void goToPayBills() {
 		tabPayBills.click();
+	}
+	
+	public void goToTransferFunds() {
+		tabTransferFunds.click();
 	}
 	
 	public void logOut() {
 		userLogo.click();
 		logOutLink.click();
-		System.out.println("logout done");
+		//System.out.println("logout done");
 	}
 }

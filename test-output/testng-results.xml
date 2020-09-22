@@ -2,98 +2,98 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7621" started-at="2020-09-22T03:48:29Z" finished-at="2020-09-22T03:48:37Z">
+  <suite name="Default suite" duration-ms="9583" started-at="2020-09-22T04:57:06Z" finished-at="2020-09-22T04:57:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7621" started-at="2020-09-22T03:48:29Z" finished-at="2020-09-22T03:48:37Z">
-      <class name="testcases.TC002VerifyAddPayee">
-        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:testcases.TC002VerifyAddPayee@77fbd92c]" name="initializeDriver" is-config="true" duration-ms="6586" started-at="2020-09-22T03:48:23Z" finished-at="2020-09-22T03:48:29Z">
+    <test name="Default test" duration-ms="9583" started-at="2020-09-22T04:57:06Z" finished-at="2020-09-22T04:57:16Z">
+      <class name="testcases.TC003VerifyTransferFunds">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:testcases.TC003VerifyTransferFunds@77fbd92c]" name="initializeDriver" is-config="true" duration-ms="6763" started-at="2020-09-22T04:56:59Z" finished-at="2020-09-22T04:57:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method status="PASS" signature="verifyAddPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC002VerifyAddPayee@77fbd92c]" name="verifyAddPayee" duration-ms="2862" started-at="2020-09-22T03:48:30Z" data-provider="AddPayeeData" finished-at="2020-09-22T03:48:33Z">
+        <test-method status="PASS" signature="verifyTransferFunds(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC003VerifyTransferFunds@77fbd92c]" name="verifyTransferFunds" duration-ms="3125" started-at="2020-09-22T04:57:07Z" data-provider="verifyTransferFundsData" finished-at="2020-09-22T04:57:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[HydroOne]]>
+                <![CDATA[1]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[1234 Steeles Ave., Mississauga, ON]]>
+                <![CDATA[2]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[12341234]]>
+                <![CDATA[100]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Utilities]]>
+                <![CDATA[misc1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAddPayee -->
-        <test-method status="PASS" signature="verifyAddPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC002VerifyAddPayee@77fbd92c]" name="verifyAddPayee" duration-ms="2042" started-at="2020-09-22T03:48:33Z" data-provider="AddPayeeData" finished-at="2020-09-22T03:48:35Z">
+        </test-method> <!-- verifyTransferFunds -->
+        <test-method status="PASS" signature="verifyTransferFunds(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC003VerifyTransferFunds@77fbd92c]" name="verifyTransferFunds" duration-ms="2979" started-at="2020-09-22T04:57:10Z" data-provider="verifyTransferFundsData" finished-at="2020-09-22T04:57:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ScotiaBank Visa]]>
+                <![CDATA[2]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[4321 Rutherford, Brampton, ON]]>
+                <![CDATA[1]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[43214321]]>
+                <![CDATA[200]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Credit Card]]>
+                <![CDATA[misc2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAddPayee -->
-        <test-method status="PASS" signature="verifyAddPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC002VerifyAddPayee@77fbd92c]" name="verifyAddPayee" duration-ms="2009" started-at="2020-09-22T03:48:35Z" data-provider="AddPayeeData" finished-at="2020-09-22T03:48:37Z">
+        </test-method> <!-- verifyTransferFunds -->
+        <test-method status="PASS" signature="verifyTransferFunds(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC003VerifyTransferFunds@77fbd92c]" name="verifyTransferFunds" duration-ms="2677" started-at="2020-09-22T04:57:13Z" data-provider="verifyTransferFundsData" finished-at="2020-09-22T04:57:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Wawansa]]>
+                <![CDATA[1]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[5433 SoAndSo Strt, ON]]>
+                <![CDATA[2]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[98769876]]>
+                <![CDATA[100]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Insurance Provider]]>
+                <![CDATA[misc3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAddPayee -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC002VerifyAddPayee@77fbd92c]" name="tearDown" is-config="true" duration-ms="941" started-at="2020-09-22T03:48:37Z" finished-at="2020-09-22T03:48:38Z">
+        </test-method> <!-- verifyTransferFunds -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC003VerifyTransferFunds@77fbd92c]" name="tearDown" is-config="true" duration-ms="1011" started-at="2020-09-22T04:57:16Z" finished-at="2020-09-22T04:57:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testcases.TC002VerifyAddPayee -->
+      </class> <!-- testcases.TC003VerifyTransferFunds -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
