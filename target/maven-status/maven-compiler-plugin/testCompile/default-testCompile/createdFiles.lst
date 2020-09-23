@@ -1,8 +1,0 @@
-base\BasePage.class
-base\BaseClass.class
-pageClasses\LoginPage.class
-testcases\TC001VerifyLogin.class
-pageClasses\AccountSummaryPage.class
-pageClasses\HomePage.class
-utilities\ExcelReader.class
-base\ExtentManager.class

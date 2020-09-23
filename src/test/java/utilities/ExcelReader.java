@@ -21,15 +21,15 @@ public class ExcelReader {
 		wb = new XSSFWorkbook(fis);
 		sheet = wb.getSheetAt(sheetNo);
 		formatter = new DataFormatter();
-		System.out.println("ExcelReader Constructor exiting");
+		//System.out.println("ExcelReader Constructor exiting");
 	}
 
 	public String getCellValue(int row, int col) {
-		System.out.println("function getCellValue");
+		//System.out.println("function getCellValue");
 		Cell cell = sheet.getRow(row).getCell(col);
 		String value = formatter.formatCellValue(cell);
-		System.out.println("value @ "+row+"  "+cell+"  =  "+value);
-		System.out.println("value = "+value);
+		//System.out.println("value @ "+row+"  "+cell+"  =  "+value);
+		//System.out.println("value = "+value);
 		return value;
 	}
 	
@@ -38,25 +38,25 @@ public class ExcelReader {
 		int col = getColumnCount();
 		String data[][] = new String[rows][col];
 		for(int i = 1;i<=rows;i++) {
-			System.out.println("i = "+i);
+			//System.out.println("i = "+i);
 			for(int j=0;j<col;j++) {
-				System.out.println("j = "+j);
+				//System.out.println("j = "+j);
 				data[i-1][j] = getCellValue(i,j);
-				System.out.print("data = "+data[i-1][j]+"  ");
+				//System.out.print("data = "+data[i-1][j]+"  ");
 			}
-			System.out.println(" ");
+			//System.out.println(" ");
 		}
 		return data;
 	}
 
 	public int getRowsCount() {
 		int noOfRows = (sheet.getLastRowNum() ) ;
-		System.out.println("noOfRows = "+noOfRows);
+		//System.out.println("noOfRows = "+noOfRows);
 		return noOfRows;
 	}
 	public int getColumnCount() {
 		int noOfColumns = (sheet.getRow(0).getLastCellNum() );
-		System.out.println("noOfColumns = "+noOfColumns);
+		//System.out.println("noOfColumns = "+noOfColumns);
 		return noOfColumns;
 	}
 }

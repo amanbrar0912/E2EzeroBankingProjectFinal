@@ -25,7 +25,7 @@ public class TC003VerifyTransferFunds extends BaseClass {
 
 	@Test(dataProvider = "verifyTransferFundsData")
 	public void verifyTransferFunds(String fromAccount, String toAccount, String amount, String desc) {
-		test = report.startTest("VerifyAddPayee Test");
+		//test = report.startTest("Verify Transfer Funds Test");
 		hp = new HomePage(driver);
 		hp.goToLoginPage();
 		test.log(LogStatus.INFO, "Clicked sign in button on homepage.");

@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.TC003VerifyTransferFunds">
+      <class name="testcases.TC001VerifyLogin">
         <methods>
           <include name="tearDown"/>
-          <include name="verifyTransferFunds" invocation-numbers="0 1 2"/>
+          <include name="verifyLogin" invocation-numbers="1"/>
           <include name="initializeDriver"/>
         </methods>
-      </class> <!-- testcases.TC003VerifyTransferFunds -->
+      </class> <!-- testcases.TC001VerifyLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

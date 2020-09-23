@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Regression">
+<suite name="Regression">   <!--parallel="tests"  -->
 
-	<test thread-count = "5" name="Login Test">
+	<listeners>
+		<listener class-name="utilities.Listeners" />
+	</listeners>
+
+	<test thread-count="1" name="Login Test">
 		<classes>
 			<class name="testcases.TC001VerifyLogin" />
 		</classes>
-	</test> <!-- Regression -->
+	</test> <!-- Test -->
 
+	<test thread-count="1" name="Add Payee Test">
+		<classes>
+			<class name="testcases.TC002VerifyAddPayee" />
+		</classes>
+	</test> <!-- Test -->
 
+	<test thread-count="1" name="Transfer funds Test">
+		<classes>
+			<class name="testcases.TC003VerifyTransferFunds" />
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Regression -->
+
+
+

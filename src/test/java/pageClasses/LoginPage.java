@@ -34,7 +34,7 @@ public class LoginPage extends BasePage{
 	}
 
 	public void goToHomePage() {
-		System.out.println("clicking the Brand logo");
+		//System.out.println("clicking the Brand logo");
 		logoBrand.click();
 	}
 

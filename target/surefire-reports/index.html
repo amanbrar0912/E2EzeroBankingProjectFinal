@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Regression">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,12 +102,7 @@
                     <div class="method-list-content failed suite-Regression">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testcases.TC001VerifyLogin" hash-for-method="verifyLogin(Amandeep, newpass)">verifyLogin(Amandeep, newpass)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testcases.TC001VerifyLogin" hash-for-method="verifyLogin(Hello, World)">verifyLogin(Hello, World)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testcases.TC001VerifyLogin" hash-for-method="verifyLogin(Aman, noPass)">verifyLogin(Aman, noPass)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Regression -->
@@ -121,7 +116,37 @@
                     <div class="method-list-content passed suite-Regression">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testcases.TC002VerifyAddPayee" hash-for-method="verifyAddPayee(ScotiaBank Visa, 4321 Rutherford, Brampton, ON, 43214321, Credit Card)">verifyAddPayee(ScotiaBank Visa, 4321 Rutherford, Brampton, ON, 43214321, Credit Card)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testcases.TC002VerifyAddPayee" hash-for-method="verifyAddPayee(Wawansa, 5433 SoAndSo Strt, ON, 98769876, Insurance Provider)">verifyAddPayee(Wawansa, 5433 SoAndSo Strt, ON, 98769876, Insurance Provider)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testcases.TC002VerifyAddPayee" hash-for-method="verifyAddPayee(HydroOne, 1234 Steeles Ave., Mississauga, ON, 12341234, Utilities)">verifyAddPayee(HydroOne, 1234 Steeles Ave., Mississauga, ON, 12341234, Utilities)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testcases.TC001VerifyLogin" hash-for-method="verifyLogin(username, password)">verifyLogin(username, password)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testcases.TC003VerifyTransferFunds" hash-for-method="verifyTransferFunds(1, 2, 100, misc1)">verifyTransferFunds(1, 2, 100, misc1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testcases.TC003VerifyTransferFunds" hash-for-method="verifyTransferFunds(2, 1, 200, misc2)">verifyTransferFunds(2, 1, 200, misc2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testcases.TC003VerifyTransferFunds" hash-for-method="verifyTransferFunds(1, 2, 100, misc3)">verifyTransferFunds(1, 2, 100, misc3)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Regression -->
@@ -144,48 +169,14 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyLogin(Amandeep, newpass)">
-                  </a> <!-- verifyLogin(Amandeep, newpass) -->
+                  <a name="verifyLogin(Aman, noPass)">
+                  </a> <!-- verifyLogin(Aman, noPass) -->
                   <span class="method-name">verifyLogin</span>
-                  <span class="parameters">(Amandeep, newpass)</span>
+                  <span class="parameters">(Aman, noPass)</span>
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
 	expected [Zero - Account Summary] but found [Zero - Log in]
-	at testcases.TC001VerifyLogin.verifyLogin(TC001VerifyLogin.java:38)
+	at testcases.TC001VerifyLogin.verifyLogin(TC001VerifyLogin.java:37)
 ... Removed 30 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLogin(Hello, World)">
-                  </a> <!-- verifyLogin(Hello, World) -->
-                  <span class="method-name">verifyLogin</span>
-                  <span class="parameters">(Hello, World)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#signin_button&quot;}
-  (Session info: chrome=85.0.4183.102)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-0F8J9IN&apos;, ip: &apos;192.168.0.20&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63240}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 9bfc3e80b5be40b978c526328be89655
-*** Element info: {Using=id, value=signin_button}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy8.click(Unknown Source)
-	at pageClasses.HomePage.goToLoginPage(HomePage.java:20)
-	at testcases.TC001VerifyLogin.verifyLogin(TC001VerifyLogin.java:25)
-... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -207,6 +198,70 @@ Session ID: 9bfc3e80b5be40b978c526328be89655
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Regression-class-passed -->
+          <div class="suite-Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TC002VerifyAddPayee</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddPayee(ScotiaBank Visa, 4321 Rutherford, Brampton, ON, 43214321, Credit Card)">
+                  </a> <!-- verifyAddPayee(ScotiaBank Visa, 4321 Rutherford, Brampton, ON, 43214321, Credit Card) -->
+                  <span class="method-name">verifyAddPayee</span>
+                  <span class="parameters">(ScotiaBank Visa, 4321 Rutherford, Brampton, ON, 43214321, Credit Card)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddPayee(Wawansa, 5433 SoAndSo Strt, ON, 98769876, Insurance Provider)">
+                  </a> <!-- verifyAddPayee(Wawansa, 5433 SoAndSo Strt, ON, 98769876, Insurance Provider) -->
+                  <span class="method-name">verifyAddPayee</span>
+                  <span class="parameters">(Wawansa, 5433 SoAndSo Strt, ON, 98769876, Insurance Provider)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddPayee(HydroOne, 1234 Steeles Ave., Mississauga, ON, 12341234, Utilities)">
+                  </a> <!-- verifyAddPayee(HydroOne, 1234 Steeles Ave., Mississauga, ON, 12341234, Utilities) -->
+                  <span class="method-name">verifyAddPayee</span>
+                  <span class="parameters">(HydroOne, 1234 Steeles Ave., Mississauga, ON, 12341234, Utilities)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-passed -->
+          <div class="suite-Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TC003VerifyTransferFunds</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTransferFunds(1, 2, 100, misc1)">
+                  </a> <!-- verifyTransferFunds(1, 2, 100, misc1) -->
+                  <span class="method-name">verifyTransferFunds</span>
+                  <span class="parameters">(1, 2, 100, misc1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTransferFunds(2, 1, 200, misc2)">
+                  </a> <!-- verifyTransferFunds(2, 1, 200, misc2) -->
+                  <span class="method-name">verifyTransferFunds</span>
+                  <span class="parameters">(2, 1, 200, misc2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTransferFunds(1, 2, 100, misc3)">
+                  </a> <!-- verifyTransferFunds(1, 2, 100, misc3) -->
+                  <span class="method-name">verifyTransferFunds</span>
+                  <span class="parameters">(1, 2, 100, misc3)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-passed -->
         </div> <!-- panel Regression -->
         <div panel-name="test-xml-Regression" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -217,11 +272,24 @@ Session ID: 9bfc3e80b5be40b978c526328be89655
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Regression&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Login Test&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utilities.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Login Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testcases.TC001VerifyLogin&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Login Test --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Add Payee Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.TC002VerifyAddPayee&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Add Payee Test --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Transfer funds Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.TC003VerifyTransferFunds&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Transfer funds Test --&gt;
 &lt;/suite&gt; &lt;!-- Regression --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -234,6 +302,12 @@ Session ID: 9bfc3e80b5be40b978c526328be89655
             <ul>
               <li>
                 <span class="test-name">Login Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Add Payee Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Transfer funds Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -259,24 +333,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyLogin')
-data.setCell(0, 2, 'testcases.TC001VerifyLogin')
-data.setCell(0, 3, 2036);
+data.setCell(0, 1, 'verifyTransferFunds')
+data.setCell(0, 2, 'testcases.TC003VerifyTransferFunds')
+data.setCell(0, 3, 2857);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyLogin')
-data.setCell(1, 2, 'testcases.TC001VerifyLogin')
-data.setCell(1, 3, 1532);
+data.setCell(1, 1, 'verifyAddPayee')
+data.setCell(1, 2, 'testcases.TC002VerifyAddPayee')
+data.setCell(1, 3, 2717);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyLogin')
-data.setCell(2, 2, 'testcases.TC001VerifyLogin')
-data.setCell(2, 3, 698);
+data.setCell(2, 1, 'verifyAddPayee')
+data.setCell(2, 2, 'testcases.TC002VerifyAddPayee')
+data.setCell(2, 3, 2355);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyAddPayee')
+data.setCell(3, 2, 'testcases.TC002VerifyAddPayee')
+data.setCell(3, 3, 2324);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyTransferFunds')
+data.setCell(4, 2, 'testcases.TC003VerifyTransferFunds')
+data.setCell(4, 3, 2168);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyTransferFunds')
+data.setCell(5, 2, 'testcases.TC003VerifyTransferFunds')
+data.setCell(5, 3, 2115);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyLogin')
+data.setCell(6, 2, 'testcases.TC001VerifyLogin')
+data.setCell(6, 3, 1667);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyLogin')
+data.setCell(7, 2, 'testcases.TC001VerifyLogin')
+data.setCell(7, 3, 595);
 window.suiteTableData['Regression']= { tableData: data, tableDiv: 'times-div-Regression'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Regression">
               </div> <!-- times-div-Regression -->
             </div> <!-- times-div -->
@@ -303,30 +397,70 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC001VerifyLogin</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
+              <div class="configuration-test before">
                 <span class="method-name">initializeDriver</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
+              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifyLogin(username, password)</span>
-                <span class="method-start">7912 ms</span>
+                <span class="method-start">8487 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifyLogin(Amandeep, newpass)</span>
-                <span class="method-start">9444 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyLogin(Hello, World)</span>
+                <span class="method-name">verifyLogin(Aman, noPass)</span>
                 <span class="method-start">10157 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-suite after">
+              <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">12235 ms</span>
-              </div> <!-- configuration-suite after -->
+                <span class="method-start">11269 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC002VerifyAddPayee</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">12388 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">verifyAddPayee(HydroOne, 1234 Steeles Ave., Mississauga, ON, 12341234, Utilities)</span>
+                <span class="method-start">18914 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyAddPayee(ScotiaBank Visa, 4321 Rutherford, Brampton, ON, 43214321, Credit Card)</span>
+                <span class="method-start">21632 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyAddPayee(Wawansa, 5433 SoAndSo Strt, ON, 98769876, Insurance Provider)</span>
+                <span class="method-start">23957 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">26312 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC003VerifyTransferFunds</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">27196 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">verifyTransferFunds(1, 2, 100, misc1)</span>
+                <span class="method-start">33435 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyTransferFunds(2, 1, 200, misc2)</span>
+                <span class="method-start">36293 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyTransferFunds(1, 2, 100, misc3)</span>
+                <span class="method-start">38409 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">40578 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

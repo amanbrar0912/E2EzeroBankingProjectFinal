@@ -1,11 +1,8 @@
 package base;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.Properties;
 
-import com.relevantcodes.extentreports.DisplayOrder;
 import com.relevantcodes.extentreports.ExtentReports;
 
 public class ExtentManager {
@@ -18,14 +15,16 @@ public class ExtentManager {
 				FileInputStream fis = new FileInputStream(".\\src\\test\\resources\\properties\\config.properties");
 				prop.load(fis);
 				String ExtentReportsFile = prop.getProperty("ExtentReportsFile");
-				System.out.println(ExtentReportsFile);
+				//System.out.println(ExtentReportsFile);
+				//extent = new ExtentReports();
 				extent = new ExtentReports(ExtentReportsFile, true);
+				extent
+                .addSystemInfo("Environment", "Automation Testing")
+                .addSystemInfo("User Name", "Amandeep Brar");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		}
 		return extent;
-
 	}
-
 }

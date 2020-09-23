@@ -24,7 +24,7 @@ public class TC002VerifyAddPayee extends BaseClass {
 
 	@Test(dataProvider = "AddPayeeData")
 	public void verifyAddPayee(String pName, String pAddress, String pAccount, String pDetails) {
-		test = report.startTest("VerifyAddPayee Test");
+		//test = report.startTest("Verify Add Payee Test");
 		hp = new HomePage(driver);
 		hp.goToLoginPage();
 		test.log(LogStatus.INFO, "Clicked sign in button on homepage.");
@@ -56,7 +56,7 @@ public class TC002VerifyAddPayee extends BaseClass {
 	}
 
 	public void returnToHomePage() {
-		System.out.println("returning to homepage");
+		//System.out.println("returning to homepage");
 		asp = new AccountSummaryPage(driver);
 		asp.logOut();
 		lp.goToHomePage();

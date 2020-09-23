@@ -20,7 +20,7 @@ public class TC001VerifyLogin extends BaseClass {
 
 	@Test(dataProvider = "loginData")
 	public void verifyLogin(String login, String password) throws IOException {
-		test = report.startTest("VerifyLogin Test");
+		//test = report.startTest("Verify Login Test");
 		hp = new HomePage(driver);
 		hp.goToLoginPage();
 		test.log(LogStatus.INFO, "Clicked sign in button on homepage.");
@@ -30,15 +30,16 @@ public class TC001VerifyLogin extends BaseClass {
 		String expectedTitle = "Zero - Account Summary"; // get this string from SRS
 		String actualTitle = driver.getTitle();
 		test.log(LogStatus.INFO, "Page title captured from landing page.");
+		// Assert.assertEquals(actualTitle, expectedTitle);
+
+		SoftAssert sa = new SoftAssert();
+		sa.assertEquals(actualTitle, expectedTitle);
+		sa.assertAll();
+
 		if (actualTitle.equals(expectedTitle)) {
 			logOut();
 		}
 		returnToHomePage();
-		SoftAssert sa = new SoftAssert();
-		sa.assertEquals(actualTitle, expectedTitle);
-		sa.assertAll();
-		
-		// Assert.assertEquals(actualTitle, expectedTitle);
 	}
 
 	@DataProvider(name = "loginData")
@@ -48,7 +49,7 @@ public class TC001VerifyLogin extends BaseClass {
 	}
 
 	public void logOut() {
-		System.out.println("log out");
+		// System.out.println("log out");
 		asp = new AccountSummaryPage(driver);
 		asp.logOut();
 	}
