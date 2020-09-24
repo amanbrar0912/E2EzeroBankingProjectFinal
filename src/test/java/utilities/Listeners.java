@@ -17,7 +17,7 @@ public class Listeners extends BaseClass implements ITestListener {
 		// TODO Auto-generated method stub
 		// System.out.println("Method : onTestStart");
 		// threadSafeExtent.get().log(LogStatus.WARNING, "TestCase started");
-		test = report.startTest(result.getName().toUpperCase());
+		//test = report.startTest(result.getName().toUpperCase());
 	}
 
 	public void onTestSuccess(ITestResult result) {

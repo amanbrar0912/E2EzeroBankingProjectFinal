@@ -1,28 +1,15 @@
 package base;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
-
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
-
 import pageClasses.AccountSummaryPage;
 
 public class BaseClass {
@@ -49,6 +36,7 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		driver.get(prop.getProperty("testsiteURL"));
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		//report.startTest(test);
 		return driver;
 	}
 
@@ -57,9 +45,8 @@ public class BaseClass {
 		if (driver != null) {
 			driver.quit();
 		}
-		report.endTest(test);
-		report.flush();
-
+		//report.endTest(test);
+		//report.flush();
 	}
 
 	/*

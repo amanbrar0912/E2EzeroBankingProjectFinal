@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression]">
-  <listeners>
-    <listener class-name="utilities.Listeners"/>
-  </listeners>
-  <test thread-count="5" name="Login Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.TC001VerifyLogin">
+      <class name="testcases.TC004VerifyPaySavedPayee">
         <methods>
+          <include name="verifyPaySavedPayee" invocation-numbers="0 1"/>
           <include name="tearDown"/>
-          <include name="verifyLogin" invocation-numbers="1"/>
           <include name="initializeDriver"/>
         </methods>
-      </class> <!-- testcases.TC001VerifyLogin -->
+      </class> <!-- testcases.TC004VerifyPaySavedPayee -->
     </classes>
-  </test> <!-- Login Test(failed) -->
-</suite> <!-- Failed suite [Regression] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

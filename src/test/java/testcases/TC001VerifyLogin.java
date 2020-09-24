@@ -20,7 +20,7 @@ public class TC001VerifyLogin extends BaseClass {
 
 	@Test(dataProvider = "loginData")
 	public void verifyLogin(String login, String password) throws IOException {
-		//test = report.startTest("Verify Login Test");
+		test = report.startTest("Verify Login Test");
 		hp = new HomePage(driver);
 		hp.goToLoginPage();
 		test.log(LogStatus.INFO, "Clicked sign in button on homepage.");

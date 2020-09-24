@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="40.702" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="56.745" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_261\jre\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\HP\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1599856291742807468.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\HP\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf660201186882082878.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_261\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk1.8.0_261/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_261/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_261/bin/../jre/lib/amd64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Java\jdk1.8.0_261\bin;C:\Program Files\Git\cmd;D:\AppData\Local\Android\Sdk\tools\bin;D:\AppData\Local\Android\Sdk\tools;D:\AppData\Local\Android\Sdk\platform-tools;D:\AppData\Local\Android\Sdk\emulator;C:\Users\HP\AppData\Local\Microsoft\WindowsApps;;C:\Users\HP\Desktop;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,11 +60,13 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="verifyLogin" classname="testcases.TC001VerifyLogin" time="1.732"/>
-  <testcase name="verifyAddPayee" classname="testcases.TC002VerifyAddPayee" time="2.917"/>
-  <testcase name="verifyAddPayee" classname="testcases.TC002VerifyAddPayee" time="2.491"/>
-  <testcase name="verifyAddPayee" classname="testcases.TC002VerifyAddPayee" time="2.303"/>
-  <testcase name="verifyTransferFunds" classname="testcases.TC003VerifyTransferFunds" time="3.043"/>
-  <testcase name="verifyTransferFunds" classname="testcases.TC003VerifyTransferFunds" time="2.433"/>
-  <testcase name="verifyTransferFunds" classname="testcases.TC003VerifyTransferFunds" time="2.289"/>
+  <testcase name="verifyLogin" classname="testcases.TC001VerifyLogin" time="2.027"/>
+  <testcase name="verifyAddPayee" classname="testcases.TC002VerifyAddPayee" time="2.715"/>
+  <testcase name="verifyAddPayee" classname="testcases.TC002VerifyAddPayee" time="2.337"/>
+  <testcase name="verifyAddPayee" classname="testcases.TC002VerifyAddPayee" time="2.771"/>
+  <testcase name="verifyTransferFunds" classname="testcases.TC003VerifyTransferFunds" time="3.875"/>
+  <testcase name="verifyTransferFunds" classname="testcases.TC003VerifyTransferFunds" time="2.402"/>
+  <testcase name="verifyTransferFunds" classname="testcases.TC003VerifyTransferFunds" time="2.127"/>
+  <testcase name="verifyPaySavedPayee" classname="testcases.TC004VerifyPaySavedPayee" time="3.152"/>
+  <testcase name="verifyPaySavedPayee" classname="testcases.TC004VerifyPaySavedPayee" time="3.362"/>
 </testsuite>

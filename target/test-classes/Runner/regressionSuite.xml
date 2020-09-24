@@ -23,6 +23,12 @@
 			<class name="testcases.TC003VerifyTransferFunds" />
 		</classes>
 	</test> <!-- Test -->
+	
+	<test thread-count="1" name="Add New Payee Test">
+		<classes>
+			<class name="testcases.TC004VerifyPaySavedPayee" />
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Regression -->
 
 
