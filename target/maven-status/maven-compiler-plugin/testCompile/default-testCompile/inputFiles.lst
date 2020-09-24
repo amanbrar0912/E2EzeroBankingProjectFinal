@@ -7,6 +7,7 @@ C:\Users\HP\eclipse-workspace\E2EzeroBankingProjectFinal\src\test\java\pageClass
 C:\Users\HP\eclipse-workspace\E2EzeroBankingProjectFinal\src\test\java\base\ExtentManager.java
 C:\Users\HP\eclipse-workspace\E2EzeroBankingProjectFinal\src\test\java\pageClasses\HomePage.java
 C:\Users\HP\eclipse-workspace\E2EzeroBankingProjectFinal\src\test\java\pageClasses\PayBillsPage.java
+C:\Users\HP\eclipse-workspace\E2EzeroBankingProjectFinal\src\test\java\utilities\Utilities.java
 C:\Users\HP\eclipse-workspace\E2EzeroBankingProjectFinal\src\test\java\pageClasses\LoginPage.java
 C:\Users\HP\eclipse-workspace\E2EzeroBankingProjectFinal\src\test\java\testcases\TC003VerifyTransferFunds.java
 C:\Users\HP\eclipse-workspace\E2EzeroBankingProjectFinal\src\test\java\utilities\ExcelReader.java

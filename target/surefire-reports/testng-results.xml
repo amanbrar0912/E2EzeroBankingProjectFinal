@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="8" passed="7">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression" duration-ms="41434" started-at="2020-09-23T18:17:33Z" finished-at="2020-09-23T18:18:15Z">
+  <suite name="Regression" duration-ms="38845" started-at="2020-09-24T02:24:21Z" finished-at="2020-09-24T02:25:00Z">
     <groups>
     </groups>
-    <test name="Login Test" duration-ms="12368" started-at="2020-09-23T18:17:33Z" finished-at="2020-09-23T18:17:46Z">
+    <test name="Login Test" duration-ms="9720" started-at="2020-09-24T02:24:21Z" finished-at="2020-09-24T02:24:31Z">
       <class name="testcases.TC001VerifyLogin">
-        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:testcases.TC001VerifyLogin@333291e3]" name="initializeDriver" is-config="true" duration-ms="7583" started-at="2020-09-23T18:17:33Z" finished-at="2020-09-23T18:17:41Z">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:testcases.TC001VerifyLogin@3427b02d]" name="initializeDriver" is-config="true" duration-ms="6559" started-at="2020-09-24T02:24:21Z" finished-at="2020-09-24T02:24:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method status="PASS" signature="verifyLogin(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC001VerifyLogin@333291e3]" name="verifyLogin" duration-ms="1667" started-at="2020-09-23T18:17:42Z" data-provider="loginData" finished-at="2020-09-23T18:17:43Z">
+        <test-method status="PASS" signature="verifyLogin(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC001VerifyLogin@3427b02d]" name="verifyLogin" duration-ms="1422" started-at="2020-09-24T02:24:28Z" data-provider="loginData" finished-at="2020-09-24T02:24:30Z">
           <params>
             <param index="0">
               <value>
@@ -27,77 +27,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method status="FAIL" signature="verifyLogin(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC001VerifyLogin@333291e3]" name="verifyLogin" duration-ms="595" started-at="2020-09-23T18:17:43Z" data-provider="loginData" finished-at="2020-09-23T18:17:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Aman]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[noPass]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [Zero - Account Summary] but found [Zero - Log in]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [Zero - Account Summary] but found [Zero - Log in]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-at testcases.TC001VerifyLogin.verifyLogin(TC001VerifyLogin.java:37)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC001VerifyLogin@333291e3]" name="tearDown" is-config="true" duration-ms="1098" started-at="2020-09-23T18:17:44Z" finished-at="2020-09-23T18:17:46Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC001VerifyLogin@3427b02d]" name="tearDown" is-config="true" duration-ms="712" started-at="2020-09-24T02:24:30Z" finished-at="2020-09-24T02:24:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC001VerifyLogin -->
     </test> <!-- Login Test -->
-    <test name="Add Payee Test" duration-ms="14784" started-at="2020-09-23T18:17:46Z" finished-at="2020-09-23T18:18:00Z">
+    <test name="Add Payee Test" duration-ms="14493" started-at="2020-09-24T02:24:31Z" finished-at="2020-09-24T02:24:45Z">
       <class name="testcases.TC002VerifyAddPayee">
-        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:testcases.TC002VerifyAddPayee@3bb9a3ff]" name="initializeDriver" is-config="true" duration-ms="6442" started-at="2020-09-23T18:17:46Z" finished-at="2020-09-23T18:17:52Z">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:testcases.TC002VerifyAddPayee@1ab3a8c8]" name="initializeDriver" is-config="true" duration-ms="5967" started-at="2020-09-24T02:24:31Z" finished-at="2020-09-24T02:24:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method status="PASS" signature="verifyAddPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC002VerifyAddPayee@3bb9a3ff]" name="verifyAddPayee" duration-ms="2717" started-at="2020-09-23T18:17:52Z" data-provider="AddPayeeData" finished-at="2020-09-23T18:17:55Z">
+        <test-method status="PASS" signature="verifyAddPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC002VerifyAddPayee@1ab3a8c8]" name="verifyAddPayee" duration-ms="2860" started-at="2020-09-24T02:24:37Z" data-provider="AddPayeeData" finished-at="2020-09-24T02:24:40Z">
           <params>
             <param index="0">
               <value>
@@ -123,7 +65,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddPayee -->
-        <test-method status="PASS" signature="verifyAddPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC002VerifyAddPayee@3bb9a3ff]" name="verifyAddPayee" duration-ms="2324" started-at="2020-09-23T18:17:55Z" data-provider="AddPayeeData" finished-at="2020-09-23T18:17:57Z">
+        <test-method status="PASS" signature="verifyAddPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC002VerifyAddPayee@1ab3a8c8]" name="verifyAddPayee" duration-ms="2439" started-at="2020-09-24T02:24:40Z" data-provider="AddPayeeData" finished-at="2020-09-24T02:24:42Z">
           <params>
             <param index="0">
               <value>
@@ -149,7 +91,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddPayee -->
-        <test-method status="PASS" signature="verifyAddPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC002VerifyAddPayee@3bb9a3ff]" name="verifyAddPayee" duration-ms="2355" started-at="2020-09-23T18:17:57Z" data-provider="AddPayeeData" finished-at="2020-09-23T18:18:00Z">
+        <test-method status="PASS" signature="verifyAddPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC002VerifyAddPayee@1ab3a8c8]" name="verifyAddPayee" duration-ms="2242" started-at="2020-09-24T02:24:42Z" data-provider="AddPayeeData" finished-at="2020-09-24T02:24:44Z">
           <params>
             <param index="0">
               <value>
@@ -175,19 +117,19 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddPayee -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC002VerifyAddPayee@3bb9a3ff]" name="tearDown" is-config="true" duration-ms="859" started-at="2020-09-23T18:18:00Z" finished-at="2020-09-23T18:18:00Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC002VerifyAddPayee@1ab3a8c8]" name="tearDown" is-config="true" duration-ms="720" started-at="2020-09-24T02:24:44Z" finished-at="2020-09-24T02:24:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC002VerifyAddPayee -->
     </test> <!-- Add Payee Test -->
-    <test name="Transfer funds Test" duration-ms="14238" started-at="2020-09-23T18:18:00Z" finished-at="2020-09-23T18:18:15Z">
+    <test name="Transfer funds Test" duration-ms="14608" started-at="2020-09-24T02:24:45Z" finished-at="2020-09-24T02:25:00Z">
       <class name="testcases.TC003VerifyTransferFunds">
-        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:testcases.TC003VerifyTransferFunds@4567f35d]" name="initializeDriver" is-config="true" duration-ms="6177" started-at="2020-09-23T18:18:00Z" finished-at="2020-09-23T18:18:07Z">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:testcases.TC003VerifyTransferFunds@402bba4f]" name="initializeDriver" is-config="true" duration-ms="6057" started-at="2020-09-24T02:24:45Z" finished-at="2020-09-24T02:24:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method status="PASS" signature="verifyTransferFunds(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC003VerifyTransferFunds@4567f35d]" name="verifyTransferFunds" duration-ms="2857" started-at="2020-09-23T18:18:07Z" data-provider="verifyTransferFundsData" finished-at="2020-09-23T18:18:10Z">
+        <test-method status="PASS" signature="verifyTransferFunds(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC003VerifyTransferFunds@402bba4f]" name="verifyTransferFunds" duration-ms="3003" started-at="2020-09-24T02:24:51Z" data-provider="verifyTransferFundsData" finished-at="2020-09-24T02:24:54Z">
           <params>
             <param index="0">
               <value>
@@ -213,7 +155,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTransferFunds -->
-        <test-method status="PASS" signature="verifyTransferFunds(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC003VerifyTransferFunds@4567f35d]" name="verifyTransferFunds" duration-ms="2115" started-at="2020-09-23T18:18:10Z" data-provider="verifyTransferFundsData" finished-at="2020-09-23T18:18:12Z">
+        <test-method status="PASS" signature="verifyTransferFunds(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC003VerifyTransferFunds@402bba4f]" name="verifyTransferFunds" duration-ms="2384" started-at="2020-09-24T02:24:54Z" data-provider="verifyTransferFundsData" finished-at="2020-09-24T02:24:57Z">
           <params>
             <param index="0">
               <value>
@@ -239,7 +181,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTransferFunds -->
-        <test-method status="PASS" signature="verifyTransferFunds(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC003VerifyTransferFunds@4567f35d]" name="verifyTransferFunds" duration-ms="2168" started-at="2020-09-23T18:18:12Z" data-provider="verifyTransferFundsData" finished-at="2020-09-23T18:18:14Z">
+        <test-method status="PASS" signature="verifyTransferFunds(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC003VerifyTransferFunds@402bba4f]" name="verifyTransferFunds" duration-ms="2239" started-at="2020-09-24T02:24:57Z" data-provider="verifyTransferFundsData" finished-at="2020-09-24T02:24:59Z">
           <params>
             <param index="0">
               <value>
@@ -265,7 +207,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTransferFunds -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC003VerifyTransferFunds@4567f35d]" name="tearDown" is-config="true" duration-ms="855" started-at="2020-09-23T18:18:14Z" finished-at="2020-09-23T18:18:15Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC003VerifyTransferFunds@402bba4f]" name="tearDown" is-config="true" duration-ms="729" started-at="2020-09-24T02:24:59Z" finished-at="2020-09-24T02:25:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
