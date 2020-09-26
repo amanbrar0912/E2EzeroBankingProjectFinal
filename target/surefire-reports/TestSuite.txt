@@ -1,4 +1,10 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 56.745 sec - in TestSuite
+Tests run: 12, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 69.502 sec <<< FAILURE! - in TestSuite
+verifyLogin(testcases.TC001VerifyLogin)  Time elapsed: 1.063 sec  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [Zero - Account Summary] but found [Zero - Log in]
+	at testcases.TC001VerifyLogin.verifyLogin(TC001VerifyLogin.java:37)
+

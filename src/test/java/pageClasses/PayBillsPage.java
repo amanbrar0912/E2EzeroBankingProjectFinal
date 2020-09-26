@@ -57,8 +57,39 @@ public class PayBillsPage extends BasePage {
 	@FindBy(xpath = "//div[@id='alert_content']")
 	WebElement txtAlert;
 	
+	@FindBy(xpath = "//a[contains(text(),'Purchase Foreign Currency')]")
+	WebElement tabPurchaseForeignCurrency;
 	
+	@FindBy(xpath = "//select[@id='pc_currency']")
+	WebElement selectCurrency;
 	
+	@FindBy(xpath = "//input[@id='pc_amount']")
+	WebElement txtbxAmountToConvert;
+	
+	@FindBy(xpath = "//input[@id='pc_inDollars_true']")
+	WebElement checkboxUSD;
+	
+	@FindBy(xpath = "//input[@id='pc_inDollars_false']")
+	WebElement checkboxSelectedCurrency;
+	
+	@FindBy(xpath = "//input[@id='pc_calculate_costs']")
+	WebElement btnCalculateCosts;
+	
+	@FindBy(xpath = "//input[@id='purchase_cash']")
+	WebElement btnPurchase;
+	
+	public void purchaseForeignCash(String pCurrency, String pAmount, String usd) {
+		tabPurchaseForeignCurrency.click();
+		Select s1 = new Select(selectCurrency);
+		s1.selectByVisibleText(pCurrency);
+		txtbxAmountToConvert.sendKeys(pAmount);
+		if(usd.equalsIgnoreCase("Y"))
+			checkboxUSD.click();
+		else if(usd.equalsIgnoreCase("N"))
+			checkboxSelectedCurrency.click();
+		btnCalculateCosts.click();
+		btnPurchase.click();
+	}
 	public void goToAddNewPayee() {
 		tabAddNewPayee.click();
 	}

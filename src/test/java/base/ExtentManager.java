@@ -21,6 +21,7 @@ public class ExtentManager {
 				extent
                 .addSystemInfo("Environment", "Automation Testing")
                 .addSystemInfo("User Name", "Amandeep Brar");
+				//System.out.println("ExtentReport created.");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

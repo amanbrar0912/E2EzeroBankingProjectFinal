@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Regression">
-              <span class="suite-name border-passed">Regression</span>
+              <span class="suite-name border-failed">Regression</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Regression">
-                    <span class="test-stats">4 tests</span>
+                    <span class="test-stats">5 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">12 methods, 1 failed,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Regression" class="hide-methods failed suite-Regression"> (hide)</a> <!-- hide-methods failed suite-Regression -->
+                      <a href="#" panel-name="suite-Regression" class="show-methods failed suite-Regression"> (show)</a> <!-- show-methods failed suite-Regression -->
+                    </span>
+                    <div class="method-list-content failed suite-Regression">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testcases.TC001VerifyLogin" hash-for-method="verifyLogin(new, user)">verifyLogin(new, user)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Regression -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +114,11 @@
                       <a href="#" panel-name="suite-Regression" class="show-methods passed suite-Regression"> (show)</a> <!-- show-methods passed suite-Regression -->
                     </span>
                     <div class="method-list-content passed suite-Regression">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testcases.TC002VerifyAddPayee" hash-for-method="verifyAddPayee(Wawansa, 5433 SoAndSo Strt, ON, 98769876, Insurance Provider)">verifyAddPayee(Wawansa, 5433 SoAndSo Strt, ON, 98769876, Insurance Provider)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testcases.TC002VerifyAddPayee" hash-for-method="verifyAddPayee(HydroOne, 1234 Steeles Ave., Mississauga, ON, 12341234, Utilities)">verifyAddPayee(HydroOne, 1234 Steeles Ave., Mississauga, ON, 12341234, Utilities)</a> <!-- method navigator-link -->
@@ -112,17 +131,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testcases.TC002VerifyAddPayee" hash-for-method="verifyAddPayee(Wawansa, 5433 SoAndSo Strt, ON, 98769876, Insurance Provider)">verifyAddPayee(Wawansa, 5433 SoAndSo Strt, ON, 98769876, Insurance Provider)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testcases.TC001VerifyLogin" hash-for-method="verifyLogin(username, password)">verifyLogin(username, password)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testcases.TC004VerifyPaySavedPayee" hash-for-method="verifyPaySavedPayee(Sprint, Checking, 100, 2020-09-23, misc)">verifyPaySavedPayee(Sprint, Checking, 100, 2020-09-23, misc)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -132,7 +141,22 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testcases.TC003VerifyTransferFunds" hash-for-method="verifyTransferFunds(1, 2, 100, misc1)">verifyTransferFunds(1, 2, 100, misc1)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testcases.TC004VerifyPaySavedPayee" hash-for-method="verifyPaySavedPayee(Sprint, Checking, 100, 2020-09-23, misc)">verifyPaySavedPayee(Sprint, Checking, 100, 2020-09-23, misc)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testcases.TC005VerifyPurchaseForeignCurrency" hash-for-method="verifyPurchaseForeignCurrencyData(Great Britain (pound), 100, N)">verifyPurchaseForeignCurrencyData(Great Britain (pound), 100, N)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testcases.TC005VerifyPurchaseForeignCurrency" hash-for-method="verifyPurchaseForeignCurrencyData(Switzerland (franc), 100, Y)">verifyPurchaseForeignCurrencyData(Switzerland (franc), 100, Y)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testcases.TC003VerifyTransferFunds" hash-for-method="verifyTransferFunds(1, 2, 100, misc3)">verifyTransferFunds(1, 2, 100, misc3)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -142,7 +166,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testcases.TC003VerifyTransferFunds" hash-for-method="verifyTransferFunds(1, 2, 100, misc3)">verifyTransferFunds(1, 2, 100, misc3)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression" title="testcases.TC003VerifyTransferFunds" hash-for-method="verifyTransferFunds(1, 2, 100, misc1)">verifyTransferFunds(1, 2, 100, misc1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Regression -->
@@ -157,6 +181,27 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Regression" class="panel Regression">
+          <div class="suite-Regression-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.TC001VerifyLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogin(new, user)">
+                  </a> <!-- verifyLogin(new, user) -->
+                  <span class="method-name">verifyLogin</span>
+                  <span class="parameters">(new, user)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [Zero - Account Summary] but found [Zero - Log in]
+	at testcases.TC001VerifyLogin.verifyLogin(TC001VerifyLogin.java:37)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-failed -->
           <div class="suite-Regression-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -165,10 +210,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyTransferFunds(1, 2, 100, misc1)">
-                  </a> <!-- verifyTransferFunds(1, 2, 100, misc1) -->
+                  <a name="verifyTransferFunds(1, 2, 100, misc3)">
+                  </a> <!-- verifyTransferFunds(1, 2, 100, misc3) -->
                   <span class="method-name">verifyTransferFunds</span>
-                  <span class="parameters">(1, 2, 100, misc1)</span>
+                  <span class="parameters">(1, 2, 100, misc3)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -181,10 +226,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyTransferFunds(1, 2, 100, misc3)">
-                  </a> <!-- verifyTransferFunds(1, 2, 100, misc3) -->
+                  <a name="verifyTransferFunds(1, 2, 100, misc1)">
+                  </a> <!-- verifyTransferFunds(1, 2, 100, misc1) -->
                   <span class="method-name">verifyTransferFunds</span>
-                  <span class="parameters">(1, 2, 100, misc3)</span>
+                  <span class="parameters">(1, 2, 100, misc1)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -197,18 +242,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyPaySavedPayee(Sprint, Checking, 100, 2020-09-23, misc)">
-                  </a> <!-- verifyPaySavedPayee(Sprint, Checking, 100, 2020-09-23, misc) -->
-                  <span class="method-name">verifyPaySavedPayee</span>
-                  <span class="parameters">(Sprint, Checking, 100, 2020-09-23, misc)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="verifyPaySavedPayee(Bank of America, Savings, 150, 2020-09-24, credit line)">
                   </a> <!-- verifyPaySavedPayee(Bank of America, Savings, 150, 2020-09-24, credit line) -->
                   <span class="method-name">verifyPaySavedPayee</span>
                   <span class="parameters">(Bank of America, Savings, 150, 2020-09-24, credit line)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPaySavedPayee(Sprint, Checking, 100, 2020-09-23, misc)">
+                  </a> <!-- verifyPaySavedPayee(Sprint, Checking, 100, 2020-09-23, misc) -->
+                  <span class="method-name">verifyPaySavedPayee</span>
+                  <span class="parameters">(Sprint, Checking, 100, 2020-09-23, misc)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -237,6 +282,14 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="verifyAddPayee(Wawansa, 5433 SoAndSo Strt, ON, 98769876, Insurance Provider)">
+                  </a> <!-- verifyAddPayee(Wawansa, 5433 SoAndSo Strt, ON, 98769876, Insurance Provider) -->
+                  <span class="method-name">verifyAddPayee</span>
+                  <span class="parameters">(Wawansa, 5433 SoAndSo Strt, ON, 98769876, Insurance Provider)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="verifyAddPayee(HydroOne, 1234 Steeles Ave., Mississauga, ON, 12341234, Utilities)">
                   </a> <!-- verifyAddPayee(HydroOne, 1234 Steeles Ave., Mississauga, ON, 12341234, Utilities) -->
                   <span class="method-name">verifyAddPayee</span>
@@ -251,12 +304,28 @@
                   <span class="parameters">(ScotiaBank Visa, 4321 Rutherford, Brampton, ON, 43214321, Credit Card)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression-class-passed -->
+          <div class="suite-Regression-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TC005VerifyPurchaseForeignCurrency</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyAddPayee(Wawansa, 5433 SoAndSo Strt, ON, 98769876, Insurance Provider)">
-                  </a> <!-- verifyAddPayee(Wawansa, 5433 SoAndSo Strt, ON, 98769876, Insurance Provider) -->
-                  <span class="method-name">verifyAddPayee</span>
-                  <span class="parameters">(Wawansa, 5433 SoAndSo Strt, ON, 98769876, Insurance Provider)</span>
+                  <a name="verifyPurchaseForeignCurrencyData(Great Britain (pound), 100, N)">
+                  </a> <!-- verifyPurchaseForeignCurrencyData(Great Britain (pound), 100, N) -->
+                  <span class="method-name">verifyPurchaseForeignCurrencyData</span>
+                  <span class="parameters">(Great Britain (pound), 100, N)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPurchaseForeignCurrencyData(Switzerland (franc), 100, Y)">
+                  </a> <!-- verifyPurchaseForeignCurrencyData(Switzerland (franc), 100, Y) -->
+                  <span class="method-name">verifyPurchaseForeignCurrencyData</span>
+                  <span class="parameters">(Switzerland (franc), 100, Y)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -289,11 +358,16 @@
       &lt;class name=&quot;testcases.TC003VerifyTransferFunds&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Transfer funds Test --&gt;
-  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Add New Payee Test&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Pay Saved Payee Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testcases.TC004VerifyPaySavedPayee&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Add New Payee Test --&gt;
+  &lt;/test&gt; &lt;!-- Pay Saved Payee Test --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Purchase Foreign Currency Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.TC005VerifyPurchaseForeignCurrency&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Purchase Foreign Currency Test --&gt;
 &lt;/suite&gt; &lt;!-- Regression --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -314,7 +388,10 @@
                 <span class="test-name">Transfer funds Test (1 class)</span>
               </li>
               <li>
-                <span class="test-name">Add New Payee Test (1 class)</span>
+                <span class="test-name">Pay Saved Payee Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Purchase Foreign Currency Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -340,48 +417,60 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyTransferFunds')
-data.setCell(0, 2, 'testcases.TC003VerifyTransferFunds')
-data.setCell(0, 3, 3753);
+data.setCell(0, 1, 'verifyAddPayee')
+data.setCell(0, 2, 'testcases.TC002VerifyAddPayee')
+data.setCell(0, 3, 3226);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyPaySavedPayee')
-data.setCell(1, 2, 'testcases.TC004VerifyPaySavedPayee')
-data.setCell(1, 3, 3270);
+data.setCell(1, 1, 'verifyPurchaseForeignCurrencyData')
+data.setCell(1, 2, 'testcases.TC005VerifyPurchaseForeignCurrency')
+data.setCell(1, 3, 3198);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyPaySavedPayee')
-data.setCell(2, 2, 'testcases.TC004VerifyPaySavedPayee')
-data.setCell(2, 3, 3073);
+data.setCell(2, 1, 'verifyTransferFunds')
+data.setCell(2, 2, 'testcases.TC003VerifyTransferFunds')
+data.setCell(2, 3, 3190);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyAddPayee')
-data.setCell(3, 2, 'testcases.TC002VerifyAddPayee')
-data.setCell(3, 3, 2730);
+data.setCell(3, 1, 'verifyPaySavedPayee')
+data.setCell(3, 2, 'testcases.TC004VerifyPaySavedPayee')
+data.setCell(3, 3, 3149);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'verifyAddPayee')
 data.setCell(4, 2, 'testcases.TC002VerifyAddPayee')
-data.setCell(4, 3, 2624);
+data.setCell(4, 3, 2679);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyTransferFunds')
-data.setCell(5, 2, 'testcases.TC003VerifyTransferFunds')
-data.setCell(5, 3, 2361);
+data.setCell(5, 1, 'verifyPaySavedPayee')
+data.setCell(5, 2, 'testcases.TC004VerifyPaySavedPayee')
+data.setCell(5, 3, 2654);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'verifyAddPayee')
 data.setCell(6, 2, 'testcases.TC002VerifyAddPayee')
-data.setCell(6, 3, 2261);
+data.setCell(6, 3, 2649);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'verifyTransferFunds')
 data.setCell(7, 2, 'testcases.TC003VerifyTransferFunds')
-data.setCell(7, 3, 2088);
+data.setCell(7, 3, 2639);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyLogin')
-data.setCell(8, 2, 'testcases.TC001VerifyLogin')
-data.setCell(8, 3, 1640);
+data.setCell(8, 1, 'verifyPurchaseForeignCurrencyData')
+data.setCell(8, 2, 'testcases.TC005VerifyPurchaseForeignCurrency')
+data.setCell(8, 3, 2596);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyTransferFunds')
+data.setCell(9, 2, 'testcases.TC003VerifyTransferFunds')
+data.setCell(9, 3, 2441);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyLogin')
+data.setCell(10, 2, 'testcases.TC001VerifyLogin')
+data.setCell(10, 3, 1448);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyLogin')
+data.setCell(11, 2, 'testcases.TC001VerifyLogin')
+data.setCell(11, 3, 575);
 window.suiteTableData['Regression']= { tableData: data, tableDiv: 'times-div-Regression'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-Regression">
               </div> <!-- times-div-Regression -->
             </div> <!-- times-div -->
@@ -414,76 +503,101 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifyLogin(username, password)</span>
-                <span class="method-start">7244 ms</span>
+                <span class="method-start">7450 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLogin(new, user)</span>
+                <span class="method-start">9196 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">9272 ms</span>
+                <span class="method-start">10263 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC002VerifyAddPayee</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initializeDriver</span>
-                <span class="method-start">10438 ms</span>
+                <span class="method-start">11020 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifyAddPayee(HydroOne, 1234 Steeles Ave., Mississauga, ON, 12341234, Utilities)</span>
-                <span class="method-start">16627 ms</span>
+                <span class="method-start">17430 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyAddPayee(ScotiaBank Visa, 4321 Rutherford, Brampton, ON, 43214321, Credit Card)</span>
-                <span class="method-start">19342 ms</span>
+                <span class="method-start">20722 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyAddPayee(Wawansa, 5433 SoAndSo Strt, ON, 98769876, Insurance Provider)</span>
-                <span class="method-start">21679 ms</span>
+                <span class="method-start">23449 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">24450 ms</span>
+                <span class="method-start">26152 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC003VerifyTransferFunds</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initializeDriver</span>
-                <span class="method-start">25111 ms</span>
+                <span class="method-start">26837 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifyTransferFunds(1, 2, 100, misc1)</span>
-                <span class="method-start">32008 ms</span>
+                <span class="method-start">33056 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyTransferFunds(2, 1, 200, misc2)</span>
-                <span class="method-start">35872 ms</span>
+                <span class="method-start">36300 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyTransferFunds(1, 2, 100, misc3)</span>
-                <span class="method-start">38285 ms</span>
+                <span class="method-start">38987 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">40415 ms</span>
+                <span class="method-start">41468 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC004VerifyPaySavedPayee</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initializeDriver</span>
-                <span class="method-start">41078 ms</span>
+                <span class="method-start">42159 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifyPaySavedPayee(Sprint, Checking, 100, 2020-09-23, misc)</span>
-                <span class="method-start">47376 ms</span>
+                <span class="method-start">48309 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyPaySavedPayee(Bank of America, Savings, 150, 2020-09-24, credit line)</span>
-                <span class="method-start">50529 ms</span>
+                <span class="method-start">51503 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">53892 ms</span>
+                <span class="method-start">54201 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC005VerifyPurchaseForeignCurrency</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initializeDriver</span>
+                <span class="method-start">54895 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">verifyPurchaseForeignCurrencyData(Switzerland (franc), 100, Y)</span>
+                <span class="method-start">61060 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyPurchaseForeignCurrencyData(Great Britain (pound), 100, N)</span>
+                <span class="method-start">64301 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">66943 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

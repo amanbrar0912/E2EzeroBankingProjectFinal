@@ -14,9 +14,11 @@ import utilities.ExcelReader;
 
 import java.io.IOException;
 
+import org.apache.logging.log4j.LogManager;
 import org.testng.annotations.DataProvider;
 
 public class TC002VerifyAddPayee extends BaseClass {
+	
 	HomePage hp;
 	LoginPage lp;
 	AccountSummaryPage asp;
@@ -24,21 +26,27 @@ public class TC002VerifyAddPayee extends BaseClass {
 
 	@Test(dataProvider = "AddPayeeData")
 	public void verifyAddPayee(String pName, String pAddress, String pAccount, String pDetails) {
-		test = report.startTest("Verify Add Payee Test");
+		log = LogManager.getLogger(TC002VerifyAddPayee.class.getName());
+		test = report.startTest("Add Payee Test");
 		hp = new HomePage(driver);
 		hp.goToLoginPage();
 		test.log(LogStatus.INFO, "Clicked sign in button on homepage.");
+		log.debug("Clicked sign in button on homepage.");
 		lp = new LoginPage(driver);
 		lp.verifyLogin("username", "password");
 		test.log(LogStatus.INFO, "Login credentials entered and submitted.");
+		log.debug("Login credentials entered and submitted.");
 		asp = new AccountSummaryPage(driver);
 		asp.goToPayBills();
 		test.log(LogStatus.INFO, "Navigated to PayBills page.");
+		log.debug("Navigated to PayBills page.");
 		pbp = new PayBillsPage(driver);
 		pbp.goToAddNewPayee();
 		test.log(LogStatus.INFO, "Navigated to addNewPayee tab.");
+		log.debug("Navigated to addNewPayee tab.");
 		pbp.addNewPayee(pName, pAddress, pAccount, pDetails);
 		test.log(LogStatus.INFO, "New payee data added.");
+		log.debug("New payee data added.");
 		String expectedText = "The new payee " + pName + " was successfully created.";
 		String actualText = pbp.getAlertText();
 		// if (actualText.equals(expectedText)) {

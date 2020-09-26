@@ -1,5 +1,6 @@
 C:\Users\HP\eclipse-workspace\E2EzeroBankingProjectFinal\src\test\java\testcases\TC004VerifyPaySavedPayee.java
 C:\Users\HP\eclipse-workspace\E2EzeroBankingProjectFinal\src\test\java\base\BaseClass.java
+C:\Users\HP\eclipse-workspace\E2EzeroBankingProjectFinal\src\test\java\testcases\TC005VerifyPurchaseForeignCurrency.java
 C:\Users\HP\eclipse-workspace\E2EzeroBankingProjectFinal\src\test\java\base\BasePage.java
 C:\Users\HP\eclipse-workspace\E2EzeroBankingProjectFinal\src\test\java\utilities\Listeners.java
 C:\Users\HP\eclipse-workspace\E2EzeroBankingProjectFinal\src\test\java\testcases\TC002VerifyAddPayee.java
@@ -9,6 +10,7 @@ C:\Users\HP\eclipse-workspace\E2EzeroBankingProjectFinal\src\test\java\base\Exte
 C:\Users\HP\eclipse-workspace\E2EzeroBankingProjectFinal\src\test\java\pageClasses\HomePage.java
 C:\Users\HP\eclipse-workspace\E2EzeroBankingProjectFinal\src\test\java\pageClasses\PayBillsPage.java
 C:\Users\HP\eclipse-workspace\E2EzeroBankingProjectFinal\src\test\java\utilities\Utilities.java
+C:\Users\HP\eclipse-workspace\E2EzeroBankingProjectFinal\src\test\java\pageClasses\OnlineStatementPage.java
 C:\Users\HP\eclipse-workspace\E2EzeroBankingProjectFinal\src\test\java\pageClasses\LoginPage.java
 C:\Users\HP\eclipse-workspace\E2EzeroBankingProjectFinal\src\test\java\testcases\TC003VerifyTransferFunds.java
 C:\Users\HP\eclipse-workspace\E2EzeroBankingProjectFinal\src\test\java\utilities\ExcelReader.java

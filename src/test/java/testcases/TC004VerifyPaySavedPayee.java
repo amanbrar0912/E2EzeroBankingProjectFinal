@@ -24,7 +24,7 @@ public class TC004VerifyPaySavedPayee extends BaseClass {
 
 	@Test(dataProvider = "verifyPaySavedPayeeData")
 	public void verifyPaySavedPayee(String payee, String account, String amount, String date, String desc) {
-		test = report.startTest("Verify Pay Saved Payee Test");
+		test = report.startTest("Pay Saved Payee Test");
 		hp = new HomePage(driver);
 		hp.goToLoginPage();
 		test.log(LogStatus.INFO, "Clicked sign in button on homepage.");
@@ -51,7 +51,6 @@ public class TC004VerifyPaySavedPayee extends BaseClass {
 		asp = new AccountSummaryPage(driver);
 		asp.logOut();
 		lp.goToHomePage();
-		
 	}
 
 	@DataProvider(name = "verifyPaySavedPayeeData")

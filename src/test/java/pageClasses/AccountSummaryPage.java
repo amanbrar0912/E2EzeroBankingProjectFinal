@@ -23,6 +23,9 @@ public class AccountSummaryPage extends BasePage {
 	@FindBy(xpath="//a[contains(text(),'Transfer Funds')]")
 	WebElement tabTransferFunds;
 	
+	@FindBy(xpath="//a[contains(text(),'Online Statements')]")
+	WebElement tabOnlineStatements;
+	
 	
 	public void goToPayBills() {
 		tabPayBills.click();
@@ -30,6 +33,10 @@ public class AccountSummaryPage extends BasePage {
 	
 	public void goToTransferFunds() {
 		tabTransferFunds.click();
+	}
+	
+	public void goToOnlineStatements() {
+		tabOnlineStatements.click();
 	}
 	
 	public void logOut() {

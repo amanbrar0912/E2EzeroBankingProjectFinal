@@ -15,4 +15,15 @@
       </class> <!-- testcases.TC001VerifyLogin -->
     </classes>
   </test> <!-- Login Test(failed) -->
+  <test thread-count="5" name="Download Online Statement Test(failed)">
+    <classes>
+      <class name="testcases.TC006VerifyOnlineStatementDownload">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyOnlineStatementDownload" invocation-numbers="0 1"/>
+          <include name="initializeDriver"/>
+        </methods>
+      </class> <!-- testcases.TC006VerifyOnlineStatementDownload -->
+    </classes>
+  </test> <!-- Download Online Statement Test(failed) -->
 </suite> <!-- Failed suite [Regression] -->

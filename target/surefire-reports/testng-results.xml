@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+<testng-results skipped="0" failed="1" ignored="0" total="12" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression" duration-ms="54697" started-at="2020-09-24T05:03:00Z" finished-at="2020-09-24T05:03:55Z">
+  <suite name="Regression" duration-ms="67644" started-at="2020-09-26T03:11:25Z" finished-at="2020-09-26T03:12:33Z">
     <groups>
     </groups>
-    <test name="Login Test" duration-ms="10420" started-at="2020-09-24T05:03:00Z" finished-at="2020-09-24T05:03:11Z">
+    <test name="Login Test" duration-ms="11006" started-at="2020-09-26T03:11:25Z" finished-at="2020-09-26T03:11:36Z">
       <class name="testcases.TC001VerifyLogin">
-        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:testcases.TC001VerifyLogin@3427b02d]" name="initializeDriver" is-config="true" duration-ms="6527" started-at="2020-09-24T05:03:00Z" finished-at="2020-09-24T05:03:07Z">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:testcases.TC001VerifyLogin@3427b02d]" name="initializeDriver" is-config="true" duration-ms="6752" started-at="2020-09-26T03:11:25Z" finished-at="2020-09-26T03:11:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method status="PASS" signature="verifyLogin(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC001VerifyLogin@3427b02d]" name="verifyLogin" duration-ms="1640" started-at="2020-09-24T05:03:07Z" data-provider="loginData" finished-at="2020-09-24T05:03:09Z">
+        <test-method status="PASS" signature="verifyLogin(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC001VerifyLogin@3427b02d]" name="verifyLogin" duration-ms="1448" started-at="2020-09-26T03:11:32Z" data-provider="loginData" finished-at="2020-09-26T03:11:34Z">
           <params>
             <param index="0">
               <value>
@@ -27,19 +27,76 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC001VerifyLogin@3427b02d]" name="tearDown" is-config="true" duration-ms="1147" started-at="2020-09-24T05:03:09Z" finished-at="2020-09-24T05:03:11Z">
+        <test-method status="FAIL" signature="verifyLogin(java.lang.String, java.lang.String)[pri:0, instance:testcases.TC001VerifyLogin@3427b02d]" name="verifyLogin" duration-ms="575" started-at="2020-09-26T03:11:34Z" data-provider="loginData" finished-at="2020-09-26T03:11:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[new]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[user]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Zero - Account Summary] but found [Zero - Log in]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Zero - Account Summary] but found [Zero - Log in]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at testcases.TC001VerifyLogin.verifyLogin(TC001VerifyLogin.java:37)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC001VerifyLogin@3427b02d]" name="tearDown" is-config="true" duration-ms="742" started-at="2020-09-26T03:11:35Z" finished-at="2020-09-26T03:11:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC001VerifyLogin -->
     </test> <!-- Login Test -->
-    <test name="Add Payee Test" duration-ms="14668" started-at="2020-09-24T05:03:11Z" finished-at="2020-09-24T05:03:25Z">
+    <test name="Add Payee Test" duration-ms="15809" started-at="2020-09-26T03:11:36Z" finished-at="2020-09-26T03:11:52Z">
       <class name="testcases.TC002VerifyAddPayee">
-        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:testcases.TC002VerifyAddPayee@1ab3a8c8]" name="initializeDriver" is-config="true" duration-ms="6083" started-at="2020-09-24T05:03:11Z" finished-at="2020-09-24T05:03:17Z">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:testcases.TC002VerifyAddPayee@1ab3a8c8]" name="initializeDriver" is-config="true" duration-ms="6321" started-at="2020-09-26T03:11:36Z" finished-at="2020-09-26T03:11:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method status="PASS" signature="verifyAddPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC002VerifyAddPayee@1ab3a8c8]" name="verifyAddPayee" duration-ms="2624" started-at="2020-09-24T05:03:17Z" data-provider="AddPayeeData" finished-at="2020-09-24T05:03:19Z">
+        <test-method status="PASS" signature="verifyAddPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC002VerifyAddPayee@1ab3a8c8]" name="verifyAddPayee" duration-ms="3226" started-at="2020-09-26T03:11:42Z" data-provider="AddPayeeData" finished-at="2020-09-26T03:11:46Z">
           <params>
             <param index="0">
               <value>
@@ -65,7 +122,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddPayee -->
-        <test-method status="PASS" signature="verifyAddPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC002VerifyAddPayee@1ab3a8c8]" name="verifyAddPayee" duration-ms="2261" started-at="2020-09-24T05:03:20Z" data-provider="AddPayeeData" finished-at="2020-09-24T05:03:22Z">
+        <test-method status="PASS" signature="verifyAddPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC002VerifyAddPayee@1ab3a8c8]" name="verifyAddPayee" duration-ms="2679" started-at="2020-09-26T03:11:46Z" data-provider="AddPayeeData" finished-at="2020-09-26T03:11:48Z">
           <params>
             <param index="0">
               <value>
@@ -91,7 +148,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddPayee -->
-        <test-method status="PASS" signature="verifyAddPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC002VerifyAddPayee@1ab3a8c8]" name="verifyAddPayee" duration-ms="2730" started-at="2020-09-24T05:03:22Z" data-provider="AddPayeeData" finished-at="2020-09-24T05:03:25Z">
+        <test-method status="PASS" signature="verifyAddPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC002VerifyAddPayee@1ab3a8c8]" name="verifyAddPayee" duration-ms="2649" started-at="2020-09-26T03:11:48Z" data-provider="AddPayeeData" finished-at="2020-09-26T03:11:51Z">
           <params>
             <param index="0">
               <value>
@@ -117,19 +174,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddPayee -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC002VerifyAddPayee@1ab3a8c8]" name="tearDown" is-config="true" duration-ms="656" started-at="2020-09-24T05:03:25Z" finished-at="2020-09-24T05:03:25Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC002VerifyAddPayee@1ab3a8c8]" name="tearDown" is-config="true" duration-ms="677" started-at="2020-09-26T03:11:51Z" finished-at="2020-09-26T03:11:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC002VerifyAddPayee -->
     </test> <!-- Add Payee Test -->
-    <test name="Transfer funds Test" duration-ms="15960" started-at="2020-09-24T05:03:25Z" finished-at="2020-09-24T05:03:41Z">
+    <test name="Transfer funds Test" duration-ms="15318" started-at="2020-09-26T03:11:52Z" finished-at="2020-09-26T03:12:07Z">
       <class name="testcases.TC003VerifyTransferFunds">
-        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:testcases.TC003VerifyTransferFunds@402bba4f]" name="initializeDriver" is-config="true" duration-ms="6822" started-at="2020-09-24T05:03:25Z" finished-at="2020-09-24T05:03:32Z">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:testcases.TC003VerifyTransferFunds@402bba4f]" name="initializeDriver" is-config="true" duration-ms="6175" started-at="2020-09-26T03:11:52Z" finished-at="2020-09-26T03:11:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method status="PASS" signature="verifyTransferFunds(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC003VerifyTransferFunds@402bba4f]" name="verifyTransferFunds" duration-ms="3753" started-at="2020-09-24T05:03:32Z" data-provider="verifyTransferFundsData" finished-at="2020-09-24T05:03:36Z">
+        <test-method status="PASS" signature="verifyTransferFunds(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC003VerifyTransferFunds@402bba4f]" name="verifyTransferFunds" duration-ms="3190" started-at="2020-09-26T03:11:58Z" data-provider="verifyTransferFundsData" finished-at="2020-09-26T03:12:01Z">
           <params>
             <param index="0">
               <value>
@@ -155,7 +212,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTransferFunds -->
-        <test-method status="PASS" signature="verifyTransferFunds(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC003VerifyTransferFunds@402bba4f]" name="verifyTransferFunds" duration-ms="2361" started-at="2020-09-24T05:03:36Z" data-provider="verifyTransferFundsData" finished-at="2020-09-24T05:03:38Z">
+        <test-method status="PASS" signature="verifyTransferFunds(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC003VerifyTransferFunds@402bba4f]" name="verifyTransferFunds" duration-ms="2639" started-at="2020-09-26T03:12:01Z" data-provider="verifyTransferFundsData" finished-at="2020-09-26T03:12:04Z">
           <params>
             <param index="0">
               <value>
@@ -181,7 +238,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTransferFunds -->
-        <test-method status="PASS" signature="verifyTransferFunds(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC003VerifyTransferFunds@402bba4f]" name="verifyTransferFunds" duration-ms="2088" started-at="2020-09-24T05:03:39Z" data-provider="verifyTransferFundsData" finished-at="2020-09-24T05:03:41Z">
+        <test-method status="PASS" signature="verifyTransferFunds(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC003VerifyTransferFunds@402bba4f]" name="verifyTransferFunds" duration-ms="2441" started-at="2020-09-26T03:12:04Z" data-provider="verifyTransferFundsData" finished-at="2020-09-26T03:12:06Z">
           <params>
             <param index="0">
               <value>
@@ -207,19 +264,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTransferFunds -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC003VerifyTransferFunds@402bba4f]" name="tearDown" is-config="true" duration-ms="656" started-at="2020-09-24T05:03:41Z" finished-at="2020-09-24T05:03:41Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC003VerifyTransferFunds@402bba4f]" name="tearDown" is-config="true" duration-ms="687" started-at="2020-09-26T03:12:06Z" finished-at="2020-09-26T03:12:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC003VerifyTransferFunds -->
     </test> <!-- Transfer funds Test -->
-    <test name="Add New Payee Test" duration-ms="13618" started-at="2020-09-24T05:03:41Z" finished-at="2020-09-24T05:03:55Z">
+    <test name="Pay Saved Payee Test" duration-ms="12733" started-at="2020-09-26T03:12:07Z" finished-at="2020-09-26T03:12:20Z">
       <class name="testcases.TC004VerifyPaySavedPayee">
-        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:testcases.TC004VerifyPaySavedPayee@61862a7f]" name="initializeDriver" is-config="true" duration-ms="6241" started-at="2020-09-24T05:03:41Z" finished-at="2020-09-24T05:03:48Z">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:testcases.TC004VerifyPaySavedPayee@61862a7f]" name="initializeDriver" is-config="true" duration-ms="6094" started-at="2020-09-26T03:12:07Z" finished-at="2020-09-26T03:12:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method status="PASS" signature="verifyPaySavedPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC004VerifyPaySavedPayee@61862a7f]" name="verifyPaySavedPayee" duration-ms="3073" started-at="2020-09-24T05:03:48Z" data-provider="verifyPaySavedPayeeData" finished-at="2020-09-24T05:03:51Z">
+        <test-method status="PASS" signature="verifyPaySavedPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC004VerifyPaySavedPayee@61862a7f]" name="verifyPaySavedPayee" duration-ms="3149" started-at="2020-09-26T03:12:13Z" data-provider="verifyPaySavedPayeeData" finished-at="2020-09-26T03:12:16Z">
           <params>
             <param index="0">
               <value>
@@ -250,7 +307,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPaySavedPayee -->
-        <test-method status="PASS" signature="verifyPaySavedPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC004VerifyPaySavedPayee@61862a7f]" name="verifyPaySavedPayee" duration-ms="3270" started-at="2020-09-24T05:03:51Z" data-provider="verifyPaySavedPayeeData" finished-at="2020-09-24T05:03:54Z">
+        <test-method status="PASS" signature="verifyPaySavedPayee(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC004VerifyPaySavedPayee@61862a7f]" name="verifyPaySavedPayee" duration-ms="2654" started-at="2020-09-26T03:12:16Z" data-provider="verifyPaySavedPayeeData" finished-at="2020-09-26T03:12:19Z">
           <params>
             <param index="0">
               <value>
@@ -281,11 +338,65 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPaySavedPayee -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC004VerifyPaySavedPayee@61862a7f]" name="tearDown" is-config="true" duration-ms="804" started-at="2020-09-24T05:03:54Z" finished-at="2020-09-24T05:03:55Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC004VerifyPaySavedPayee@61862a7f]" name="tearDown" is-config="true" duration-ms="691" started-at="2020-09-26T03:12:19Z" finished-at="2020-09-26T03:12:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC004VerifyPaySavedPayee -->
-    </test> <!-- Add New Payee Test -->
+    </test> <!-- Pay Saved Payee Test -->
+    <test name="Purchase Foreign Currency Test" duration-ms="12748" started-at="2020-09-26T03:12:20Z" finished-at="2020-09-26T03:12:33Z">
+      <class name="testcases.TC005VerifyPurchaseForeignCurrency">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:testcases.TC005VerifyPurchaseForeignCurrency@52e6fdee]" name="initializeDriver" is-config="true" duration-ms="6109" started-at="2020-09-26T03:12:20Z" finished-at="2020-09-26T03:12:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method status="PASS" signature="verifyPurchaseForeignCurrencyData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC005VerifyPurchaseForeignCurrency@52e6fdee]" name="verifyPurchaseForeignCurrencyData" duration-ms="3198" started-at="2020-09-26T03:12:26Z" data-provider="verifyPurchaseForeignCurrencyData" finished-at="2020-09-26T03:12:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Switzerland (franc)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPurchaseForeignCurrencyData -->
+        <test-method status="PASS" signature="verifyPurchaseForeignCurrencyData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC005VerifyPurchaseForeignCurrency@52e6fdee]" name="verifyPurchaseForeignCurrencyData" duration-ms="2596" started-at="2020-09-26T03:12:29Z" data-provider="verifyPurchaseForeignCurrencyData" finished-at="2020-09-26T03:12:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Great Britain (pound)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[N]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPurchaseForeignCurrencyData -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.TC005VerifyPurchaseForeignCurrency@52e6fdee]" name="tearDown" is-config="true" duration-ms="700" started-at="2020-09-26T03:12:32Z" finished-at="2020-09-26T03:12:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TC005VerifyPurchaseForeignCurrency -->
+    </test> <!-- Purchase Foreign Currency Test -->
   </suite> <!-- Regression -->
 </testng-results>

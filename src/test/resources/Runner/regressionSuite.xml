@@ -24,11 +24,24 @@
 		</classes>
 	</test> <!-- Test -->
 	
-	<test thread-count="1" name="Add New Payee Test">
+	<test thread-count="1" name="Pay Saved Payee Test">
 		<classes>
 			<class name="testcases.TC004VerifyPaySavedPayee" />
 		</classes>
 	</test> <!-- Test -->
+	
+	<test thread-count="1" name="Purchase Foreign Currency Test">
+		<classes>
+			<class name="testcases.TC005VerifyPurchaseForeignCurrency" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test thread-count="1" name="Download Online Statement Test">
+		<classes>
+			<class name="testcases.TC006VerifyOnlineStatementDownload" />
+		</classes>
+	</test> <!-- Test -->
+	
 </suite> <!-- Regression -->
 
 
